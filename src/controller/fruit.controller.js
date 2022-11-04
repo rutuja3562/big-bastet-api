@@ -2,8 +2,8 @@ const express = require("express");
 const Fruits = require("../models/fruit.module");
 const router = express.Router();
 const path = require("path");
-const authenticate = require("../middlewares/Authenticate");
-const { countDocuments } = require("../models/fruit.module");
+// const authenticate = require("../middlewares/Authenticate");
+// const { countDocuments } = require("../models/fruit.module");
 // const { countDocuments } = require("../models/fruit.module");
 
 router.get("", async (req, res) => {
@@ -72,7 +72,7 @@ router.get("", async (req, res) => {
   }
 });
 
-router.post("", authenticate, async (req, res) => {
+router.post("", async (req, res) => {
   try {
     const vegitables = await Fruits.create(req.body);
     return res.send(vegitables);

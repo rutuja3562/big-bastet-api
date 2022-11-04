@@ -1,7 +1,7 @@
-<Button variant={"outline"} onClick={""}>
-  {" "}
-  CheckOut
-</Button>;
+// <Button variant={"outline"} onClick={""}>
+//   {" "}
+//   CheckOut
+// </Button>;
 // const getDataDelete=()=>{
 //   console.log("hello")
 //   axios({

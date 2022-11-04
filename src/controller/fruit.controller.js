@@ -55,11 +55,11 @@ router.get("", async (req, res) => {
       .limit(limit)
       .where("brand")
       .in([...brand])
-      .where("quantity")
-      .in([...quantity])
-      .where(price_gte)
-      .gte(_gte)
-      .lte(_lte);
+      // .where("quantity")
+      // .in([...quantity])
+      // .where(price_gte)
+      // .gte(_gte)
+      // .lte(_lte);
 
     // console.log("fruits", fruits);
     const totalPages = Math.ceil(
